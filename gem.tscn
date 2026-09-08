@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://co4e1kwsook8a"]
+
+[ext_resource type="Script" uid="uid://fiuu4myjxffb" path="res://gem.gd" id="2_xp2mg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i3pqv"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s7wsd"]
+
+[node name="Gem" type="Area2D" unique_id=140187198]
+script = ExtResource("2_xp2mg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1241027317]
+scale = Vector2(0.4, 0.4)
+texture = SubResource("CompressedTexture2D_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1613303250]
+shape = SubResource("CircleShape2D_s7wsd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

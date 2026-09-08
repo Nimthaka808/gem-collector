@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://d3xbfo6mddn5l"]
+
+[ext_resource type="PackedScene" uid="uid://3ojku4jwidtb" path="res://player.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bhp7s5j0h6ct2" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://co4e1kwsook8a" path="res://gem.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=354886745]
+script = ExtResource("1_h2yge")
+
+[node name="Player" parent="." unique_id=822055799 instance=ExtResource("1_0xm2m")]
+position = Vector2(100, 324)
+
+[node name="Gem" parent="." unique_id=140187198 instance=ExtResource("2_h2yge")]
+position = Vector2(295, 485)
+
+[node name="Gem2" parent="." unique_id=1649894335 instance=ExtResource("2_h2yge")]
+position = Vector2(579, 462)
+
+[node name="Gem3" parent="." unique_id=1399065992 instance=ExtResource("2_h2yge")]
+position = Vector2(882, 480)
+
+[node name="Gem4" parent="." unique_id=1006170416 instance=ExtResource("2_h2yge")]
+position = Vector2(1009, 295)
+
+[node name="Gem5" parent="." unique_id=468354573 instance=ExtResource("2_h2yge")]
+position = Vector2(389, 290)
+
+[node name="Gem6" parent="." unique_id=1207937843 instance=ExtResource("2_h2yge")]
+position = Vector2(224, 121)
+
+[node name="Gem7" parent="." unique_id=1369698505 instance=ExtResource("2_h2yge")]
+position = Vector2(886, 134)
+
+[node name="Gem8" parent="." unique_id=63543394 instance=ExtResource("2_h2yge")]
+position = Vector2(558, 120)
+
+[node name="Gem9" parent="." unique_id=1338071597 instance=ExtResource("2_h2yge")]
+position = Vector2(698, 291)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=894535139]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=681167713]
+anchors_preset = -1
+anchor_right = 0.053000003
+offset_right = -21.056004
+offset_bottom = 23.0
+text = "Score: 0"
