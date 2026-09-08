@@ -7,7 +7,7 @@ load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.cte
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s7wsd"]
 
-[node name="Gem" type="Area2D" unique_id=140187198]
+[node name="Gem" type="Area2D" unique_id=140187198 groups=["gems"]]
 script = ExtResource("2_xp2mg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1241027317]

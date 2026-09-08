@@ -45,3 +45,11 @@ anchor_right = 0.053000003
 offset_right = -21.056004
 offset_bottom = 23.0
 text = "Score: 0"
+
+[node name="WinLabel" type="Label" parent="CanvasLayer" unique_id=307148972]
+visible = false
+offset_left = 521.0
+offset_top = 301.0
+offset_right = 613.0
+offset_bottom = 334.0
+text = "YOU WIN!"
